@@ -29,7 +29,7 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a href="index.html" class="sidebar-brand brand-logo"><span style="font-weight: bold; font-family: 'Arial'; color: red, sans-serif;">Inicio</span></a>
+          <a href="index.html" id= "inicio" class="sidebar-brand brand-logo">Inicio</a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
@@ -176,9 +176,10 @@
             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-              <span class="mdi mdi-menu"></span>
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize" aria-label="name">
+              <span class="mdi mdi-menu"  aria-hidden="true" ></span>
             </button>
+
             <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
@@ -358,9 +359,9 @@
                 </div>
               </li>
             </ul>
-            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-              <span class="mdi mdi-format-line-spacing"></span>
-            </button>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas" aria-label="Toggle navigation">
+              <span class="mdi mdi-format-line-spacing" aria-hidden="true"></span>
+          </button>
           </div>
         </nav>
         <!-- partial -->
